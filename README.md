@@ -1,32 +1,42 @@
-<div align="center">
-
 # 🎴 3D Flip Card
 
-### Interactive Profile Card with Pure CSS 3D Transform
+<div align="center">
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/Mehdi-dev-sudo/Flip-card/graphs/commit-activity)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-**[View Live Demo →](https://mehdi-dev-sudo.github.io/Flip-card/)**
+**A stunning 3D flip card with smooth animations, perfect for profiles and showcases**
 
-<img src="https://raw.githubusercontent.com/Mehdi-dev-sudo/Flip-card/main/imgs/bersek.jpg" alt="Card Preview" width="280" style="border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.25);">
-
-*Hover to flip & reveal social links*
+[View Demo](#-demo) • [Quick Start](#-quick-start) • [Customize](#-customization) • [🎨 View Live Demo](https://mehdi-dev-sudo.github.io/Flip-card/)
 
 </div>
 
 ---
 
+## 🧰 Tech Stack
+- HTML5
+- CSS3
+- Font Awesome Icons
+- Google Fonts (Poppins)
+
+---
+
 ## ✨ Features
 
-- **Pure CSS 3D** - No JavaScript, just smooth transforms
-- **Responsive Design** - Works flawlessly on all devices
-- **Animated Gradient** - Dynamic background with modern colors
-- **Social Icons** - 6 linked profiles with hover effects
-- **Smooth Transitions** - Cubic-bezier timing for natural motion
-- **Lightweight** - Under 5KB total size
+🔄 **Smooth 3D Animation** - Pure CSS flip effect with cubic-bezier easing  
+📱 **Fully Responsive** - Works on all devices  
+🎨 **Modern Gradients** - Beautiful color transitions  
+⚡ **Zero Dependencies** - Just HTML & CSS  
+🔗 **Social Links** - Integrated social media icons  
+🌐 **Cross-Browser** - Compatible with all modern browsers
+
+---
+
+## 🎬 Demo
+
+Hover over the card to see the magic! The front shows your main image, while the back reveals your profile, bio, and social links with smooth hover effects.
+
+> 💡 **Pro Tip:** Add a screenshot or GIF here to showcase your card in action!
 
 ---
 
@@ -35,95 +45,67 @@
 # Clone the repo
 git clone https://github.com/Mehdi-dev-sudo/Flip-card.git
 
+# Navigate to folder
+cd Flip-card
+
 # Open in browser
-cd Flip-card && open index.html
+open index.html
 
-That's it! No build process, no dependencies. Just pure web technologies.
+**That's it!** No build process, no npm install. Just open and use.
 
 ---
 
-## 🎨 How It Works
+## 💻 Usage
 
-The card uses CSS `transform-style: preserve-3d` and `rotateY()` to create a realistic 3D flip effect:
+Simply copy the HTML structure and include the CSS:
 
+html
+<div class="wrapper">
+  <div class="card front-face">
+<img src="your-image.jpg" alt="Front" />
+  </div>
+  <div class="card back-face">
+<img src="profile.jpg" alt="Profile" />
+<div class="info">
+<div class="title">Your Name</div>
+<p>Your description</p>
+</div>
+<ul>
+<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+<!-- Add more social links -->
+</ul>
+  </div>
+</div>
+
+---
+
+## 🎨 Customization
+
+### Change Colors
 css
-.wrapper:hover > .front-face {
-transform: rotateY(-180deg);
+/* Edit gradient in style.css */
+background: linear-gradient(375deg, #1cc7d0, #2ede98);
+
+### Adjust Size
+css
+.wrapper {
+height: 400px;  /* Your height */
+width: 320px;   /* Your width */
 }
 
-.wrapper:hover > .back-face {
-transform: rotateY(0deg);
-}
-
-**Key techniques:**
-- `perspective: 1000px` for depth
-- `backface-visibility: hidden` to hide reverse sides
-- `transition: all 0.5s cubic-bezier()` for smooth animation
+### Animation Speed
+css
+transition: 0.7s cubic-bezier(.4, .2, .2, 1);  /* Change 0.7s */
 
 ---
 
-## 📂 Structure
+## 📁 Project Structure
 
 
 Flip-card/
-├── index.html          # Card structure
-├── style.css           # 3D transforms & animations
-└── imgs/
-└── bersek.jpg      # Profile image
-
-Clean, minimal, and easy to understand.
-
----
-
-## 🛠️ Tech Stack
-
-<table>
-<tr>
-<td align="center" width="100">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5" />
-<br><sub>HTML5</sub>
-</td>
-<td align="center" width="100">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40" height="40" alt="CSS3" />
-<br><sub>CSS3</sub>
-</td>
-<td align="center" width="100">
-<img src="https://cdn.worldvectorlogo.com/logos/font-awesome.svg" width="40" height="40" alt="Font Awesome" />
-<br><sub>Font Awesome</sub>
-</td>
-</tr>
-</table>
-
----
-
-## 🎯 Customization
-
-**Change colors:**
-css
-/* style.css - line 11 */
-background: linear-gradient(375deg, #YOUR_COLOR_1, #YOUR_COLOR_2);
-
-**Update image:**
-html
-<!-- index.html - line 33 -->
-<img src="/imgs/YOUR_IMAGE.jpg" alt="Your Name" />
-
-**Edit content:**
-html
-<!-- index.html - line 24-27 -->
-<div class="title">Your Name</div>
-<p>Your Description</p>
-
----
-
-## 📱 Responsive
-
-| Device | Viewport | Card Size |
-|--------|----------|-----------|
-| Desktop | > 400px | 320×400px |
-| Mobile | < 400px | 95vw×70vw |
-
-Automatically adapts to screen size with CSS media queries.
+├── index.html      # Main file
+├── style.css       # All styles
+└── imgs/          # Your images
 
 ---
 
@@ -131,31 +113,35 @@ Automatically adapts to screen size with CSS media queries.
 
 Contributions are welcome! Feel free to:
 
-- 🐛 Report bugs
-- 💡 Suggest features
-- 🔧 Submit pull requests
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-## 📄 License
+## 📝 License
 
 MIT License - feel free to use this project for personal or commercial purposes.
 
 ---
 
-## 👨‍💻 Author
+## 🙏 Credits
 
-**Mehdi Khorshidi**
-
-[![GitHub](https://img.shields.io/badge/GitHub-Mehdi--dev--sudo-181717?style=flat-square&logo=github)](https://github.com/Mehdi-dev-sudo)
-[![Telegram](https://img.shields.io/badge/Telegram-@Mehdi__ds__KH-26A5E4?style=flat-square&logo=telegram)](https://t.me/Mehdi_ds_KH)
+- [Font Awesome](https://fontawesome.com) - Icons
+- [Google Fonts](https://fonts.google.com) - Poppins font
+- Made with ❤️ by [Mehdi](https://github.com/Mehdi-dev-sudo)
 
 ---
 
 <div align="center">
 
-**⭐ Star this repo if you find it useful!**
+### ⭐ Star this repo if you find it useful!
 
-Made with ❤️ and pure CSS
+![GitHub stars](https://img.shields.io/github/stars/Mehdi-dev-sudo/Flip-card?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Mehdi-dev-sudo/Flip-card?style=social)
+
+**[Report Bug](../../issues)** • **[Request Feature](../../issues)**
 
 </div>
