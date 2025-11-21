@@ -41,7 +41,7 @@ Hover over the card to see the magic! The front shows your main image, while the
 ---
 
 ## 🚀 Quick Start
-```bash
+
 # Clone the repo
 git clone https://github.com/Mehdi-dev-sudo/Flip-card.git
 
@@ -60,6 +60,7 @@ open index.html
 Simply copy the HTML structure and include the CSS:
 
 html
+```bash
 <div class="wrapper">
   <div class="card front-face">
 <img src="your-image.jpg" alt="Front" />
@@ -76,6 +77,7 @@ html
 </ul>
   </div>
 </div>
+```
 
 ---
 
@@ -83,29 +85,36 @@ html
 
 ### Change Colors
 css
+```
 /* Edit gradient in style.css */
 background: linear-gradient(375deg, #1cc7d0, #2ede98);
+```
 
 ### Adjust Size
 css
+```
 .wrapper {
 height: 400px;  /* Your height */
 width: 320px;   /* Your width */
 }
+```
 
 ### Animation Speed
 css
+```
 transition: 0.7s cubic-bezier(.4, .2, .2, 1);  /* Change 0.7s */
+```
 
 ---
 
 ## 📁 Project Structure
 
-
+```
 Flip-card/
 ├── index.html      # Main file
 ├── style.css       # All styles
 └── imgs/          # Your images
+```
 
 ---
 
@@ -141,7 +150,5 @@ MIT License - feel free to use this project for personal or commercial purposes.
 
 ![GitHub stars](https://img.shields.io/github/stars/Mehdi-dev-sudo/Flip-card?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Mehdi-dev-sudo/Flip-card?style=social)
-
-**[Report Bug](../../issues)** • **[Request Feature](../../issues)**
 
 </div>
