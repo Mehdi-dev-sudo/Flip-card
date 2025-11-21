@@ -7,7 +7,7 @@
 
 **A stunning 3D flip card with smooth animations, perfect for profiles and showcases**
 
-[View Demo](#-demo) • [Quick Start](#-quick-start) • [Customize](#-customization) • [🎨 View Live Demo](https://mehdi-dev-sudo.github.io/Flip-card/)
+[Quick Start](#-quick-start) • [Customize](#-customization) • [🎨 View Live Demo](https://mehdi-dev-sudo.github.io/Flip-card/)
 
 </div>
 
